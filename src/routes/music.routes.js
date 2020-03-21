@@ -1,5 +1,6 @@
+
 import React from "react";
-import { Route } from "react-router";
+import { Route } from 'react-router-dom'
 // import MovieList from "modules/movies/MovieList";
 
 const MusicRoutes = () => {
