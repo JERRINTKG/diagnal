@@ -1,18 +1,11 @@
+import { moviesActions } from "actions/movies";
+
 const movies = (state = {moviesList:[]}, action) => {
     switch (action.type) {
-      case 'ADD_TODO':
-        return [
-          ...state,
-          {
-            id: action.id,
-            text: action.text,
-            completed: false
-          }
-        ]
-      case 'TOGGLE_TODO':
-        return state.map(todo =>
-          todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
-        )
+      case moviesActions.ADD_MOVIES_LIST:
+        return {...state,moviesList:[state.moviesList,...action.payload]};
+      case moviesActions.REMOVE_MOVIES_LIST:
+        return {...state,moviesList:[]};
       default:
         return state
     }

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { connect } from 'react-redux';
 import { MovieContainer } from "components/movies/movies.component";
 import { getMoviesList } from "./services";
+import { moviesActions } from "actions/movies";
 
 const Container = styled.div`
   background-color: black;
@@ -29,8 +30,8 @@ class MovieList extends Component {
     getMoviesList()
       .then(data => {
         // console.log(data['page']["content-items"]["content"]);
-        this.setState({ MovieList: data['page']["content-items"]["content"] });
-        debugger
+        this.props.dispatch({type:moviesActions.ADD_MOVIES_LIST,payload:data['page']["content-items"]["content"]});
+        // this.setState({ MovieList: data['page']["content-items"]["content"] });
       })
       .catch(data => {
         // console.log(data);
@@ -38,12 +39,12 @@ class MovieList extends Component {
   };
 
   render() {
-    let { MovieList } = this.state;
+    const { moviesList } = this.props.movies;
     return (
       <Container>
         <div className="header"></div>
         <div className="grid grid-cols-3 gap-4">
-          {MovieList.map((m, index) => {
+          {moviesList.map((m, index) => {
             return <MovieContainer key={index} movie={m} />;
           })}
         </div>
@@ -54,7 +55,7 @@ class MovieList extends Component {
 
 const mapStateToProps = (state)=> {
   return {
-    moviesList: state.movies.moviesList,
+    movies: state.movies,
   }
 }
 
