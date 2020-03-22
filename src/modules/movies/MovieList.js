@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { connect } from 'react-redux';
+import { connect } from "react-redux";
 import { MovieContainer } from "components/movies/movies.component";
 import { getMoviesList } from "./services";
 import { moviesActions } from "actions/movies";
@@ -27,21 +27,32 @@ class MovieList extends Component {
   // }
 
   componentDidMount = () => {
+    this.getData();
+  };
+
+  getData = () => {
     getMoviesList()
       .then(data => {
         // console.log(data['page']["content-items"]["content"]);
-        this.props.dispatch({type:moviesActions.ADD_MOVIES_LIST,payload:data['page']["content-items"]["content"]});
+        this.props.dispatch({
+          type: moviesActions.ADD_MOVIES_LIST,
+          payload: data["page"]["content-items"]["content"]
+        });
         // this.setState({ MovieList: data['page']["content-items"]["content"] });
       })
       .catch(data => {
         // console.log(data);
+        this.props.dispatch({
+          type: moviesActions.ADD_MOVIES_LIST,
+          payload: []
+        });
       });
   };
 
   render() {
     const { moviesList } = this.props.movies;
-    console.log(moviesList);
-    
+    // console.log(moviesList);
+
     return (
       <Container>
         <div className="header"></div>
@@ -55,11 +66,10 @@ class MovieList extends Component {
   }
 }
 
-const mapStateToProps = (state)=> {
+const mapStateToProps = state => {
   return {
-    movies: state.movies,
-  }
-}
+    movies: state.movies
+  };
+};
 
 export default connect(mapStateToProps)(MovieList);
-
