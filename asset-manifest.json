@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/diagnal/static/css/main.119390ab.chunk.css",
-    "main.js": "/diagnal/static/js/main.de72029a.chunk.js",
-    "main.js.map": "/diagnal/static/js/main.de72029a.chunk.js.map",
+    "main.js": "/diagnal/static/js/main.d83d5914.chunk.js",
+    "main.js.map": "/diagnal/static/js/main.d83d5914.chunk.js.map",
     "runtime-main.js": "/diagnal/static/js/runtime-main.456d1b2c.js",
     "runtime-main.js.map": "/diagnal/static/js/runtime-main.456d1b2c.js.map",
-    "static/js/2.6dc5b41a.chunk.js": "/diagnal/static/js/2.6dc5b41a.chunk.js",
-    "static/js/2.6dc5b41a.chunk.js.map": "/diagnal/static/js/2.6dc5b41a.chunk.js.map",
+    "static/js/2.d6e69f83.chunk.js": "/diagnal/static/js/2.d6e69f83.chunk.js",
+    "static/js/2.d6e69f83.chunk.js.map": "/diagnal/static/js/2.d6e69f83.chunk.js.map",
     "index.html": "/diagnal/index.html",
-    "precache-manifest.b9bb5d7ad8e76b74d92d4ec48689fd94.js": "/diagnal/precache-manifest.b9bb5d7ad8e76b74d92d4ec48689fd94.js",
+    "precache-manifest.d09a3cc9e5b26670273eaf30e8b3cb1c.js": "/diagnal/precache-manifest.d09a3cc9e5b26670273eaf30e8b3cb1c.js",
     "service-worker.js": "/diagnal/service-worker.js",
     "static/css/main.119390ab.chunk.css.map": "/diagnal/static/css/main.119390ab.chunk.css.map",
-    "static/js/2.6dc5b41a.chunk.js.LICENSE.txt": "/diagnal/static/js/2.6dc5b41a.chunk.js.LICENSE.txt"
+    "static/js/2.d6e69f83.chunk.js.LICENSE.txt": "/diagnal/static/js/2.d6e69f83.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.456d1b2c.js",
-    "static/js/2.6dc5b41a.chunk.js",
+    "static/js/2.d6e69f83.chunk.js",
     "static/css/main.119390ab.chunk.css",
-    "static/js/main.de72029a.chunk.js"
+    "static/js/main.d83d5914.chunk.js"
   ]
 }

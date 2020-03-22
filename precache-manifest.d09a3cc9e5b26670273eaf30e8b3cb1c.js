@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "61acceec45e1ee5616cf94b5f6252e0d",
+    "revision": "8a66cf0798d3a7f96497876fe3ee0832",
     "url": "/diagnal/index.html"
   },
   {
-    "revision": "857a5b0e99acebea53a3",
+    "revision": "453718fb304527d1af99",
     "url": "/diagnal/static/css/main.119390ab.chunk.css"
   },
   {
-    "revision": "001fcd122a085ce6653e",
-    "url": "/diagnal/static/js/2.6dc5b41a.chunk.js"
+    "revision": "9d14983aef643ef66ac2",
+    "url": "/diagnal/static/js/2.d6e69f83.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/diagnal/static/js/2.6dc5b41a.chunk.js.LICENSE.txt"
+    "url": "/diagnal/static/js/2.d6e69f83.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "857a5b0e99acebea53a3",
-    "url": "/diagnal/static/js/main.de72029a.chunk.js"
+    "revision": "453718fb304527d1af99",
+    "url": "/diagnal/static/js/main.d83d5914.chunk.js"
   },
   {
     "revision": "b7d18aebb6f5d24860ef",
