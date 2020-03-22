@@ -40,6 +40,8 @@ class MovieList extends Component {
 
   render() {
     const { moviesList } = this.props.movies;
+    console.log(moviesList);
+    
     return (
       <Container>
         <div className="header"></div>
