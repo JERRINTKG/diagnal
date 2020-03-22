@@ -45,7 +45,7 @@ class MovieList extends Component {
     return (
       <Container>
         <div className="header"></div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid  grid-cols-3 gap-12 p-3">
           {moviesList.map((m, index) => {
             return <MovieContainer key={index} movie={m} />;
           })}
